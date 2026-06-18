@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: 'German Cannabis Standard — Medical Cannabis. Made in Germany.',
   description:
     'GCS ist ein führendes deutsches Agritech-Unternehmen für medizinischen Cannabisanbau. 20.000 m² Produktionsfläche im Solar Valley Bitterfeld. GMP & GACP zertifiziert. From Cultivation to Pharmacies.',
+  icons: { icon: '/favicon.png' },
   keywords: [
     'Medical Cannabis', 'Medizinisches Cannabis', 'GMP Cannabis', 'Cannabis Anbau Deutschland',
     'Solar Valley', 'Bitterfeld', 'German Cannabis Standard', 'GCS', 'Pharma Cannabis',
