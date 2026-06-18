@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import Link from 'next/link';
 
 export default function HomePage() {
   const [scrolled, setScrolled] = useState(false);
@@ -21,12 +22,7 @@ export default function HomePage() {
       >
         <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
           <a href="#" className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-solar-500 to-ember-500 flex items-center justify-center">
-              <span className="text-black font-bold text-sm">G</span>
-            </div>
-            <span className="text-white font-semibold text-sm tracking-wide hidden sm:block">
-              German Cannabis Standard
-            </span>
+            <img src="/logo.svg" alt="GCS Logo" className="h-6 w-auto invert" />
           </a>
           <div className="flex items-center gap-6">
             {['Philosophie', 'Produktion', 'Qualität', 'Partner'].map((item) => (
@@ -294,15 +290,15 @@ export default function HomePage() {
                 <div className="space-y-3 text-sm text-[var(--color-text-secondary)]">
                   <p>Kantstraße 24</p>
                   <p>10623 Berlin</p>
-                  <p className="pt-2"><a href="tel:+493055217638" className="hover:text-white transition-colors">+49 (0)30 552 17 638</a></p>
-                  <p><a href="mailto:info@cannabiosan.de" className="hover:text-white transition-colors">info@cannabiosan.de</a></p>
+                  <p className="pt-2"><a href="tel:+493****7638" className="hover:text-white transition-colors">+49 (0)30 552 17 638</a></p>
+                  <p><a href="mailto:info@cannabiosan.de" className="hover:text-white transition-colors">info@germancannabisstandard.de</a></p>
                 </div>
               </div>
               <div className="space-y-3 text-sm text-[var(--color-text-secondary)]">
                 <p className="text-white font-medium">Quick Links</p>
-                <p><a href="https://linkedin.com" target="_blank" rel="noopener" className="hover:text-white transition-colors">LinkedIn</a></p>
-                <p><a href="/impressum" className="hover:text-white transition-colors">Impressum</a></p>
-                <p><a href="/datenschutz" className="hover:text-white transition-colors">Datenschutz</a></p>
+                <p><a href="https://www.linkedin.com/company/gcs-german-cannabis-standard" target="_blank" rel="noopener" className="hover:text-white transition-colors">LinkedIn</a></p>
+                <p><Link href="/impressum" className="hover:text-white transition-colors">Impressum</Link></p>
+                <p><Link href="/datenschutz" className="hover:text-white transition-colors">Datenschutz</Link></p>
               </div>
             </div>
           </div>
@@ -313,9 +309,7 @@ export default function HomePage() {
       <footer className="py-12 px-6 border-t border-[var(--color-border)]">
         <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded bg-gradient-to-br from-solar-500 to-ember-500 flex items-center justify-center">
-              <span className="text-black font-bold text-[10px]">G</span>
-            </div>
+            <img src="/logo.svg" alt="GCS Logo" className="h-5 w-auto invert opacity-60" />
             <span className="text-xs text-[var(--color-text-muted)]">
               German Cannabis Standard GmbH © {new Date().getFullYear()}
             </span>
