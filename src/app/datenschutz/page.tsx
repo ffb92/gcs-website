@@ -1,118 +1,31 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 
-export const metadata: Metadata = {
-  title: 'Datenschutz — German Cannabis Standard',
-};
+export const metadata: Metadata = { title: 'Datenschutz — German Cannabis Standard' };
 
 export default function DatenschutzPage() {
   return (
     <div className="min-h-screen bg-[var(--color-surface)]">
-      <nav className="glass sticky top-0 z-50">
-        <div className="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <img src="/logo.svg" alt="GCS Logo" className="h-6 w-auto invert" />
-          </Link>
-          <Link
-            href="/"
-            className="px-4 py-2 rounded-full bg-solar-500/10 border border-solar-500/30 text-solar-400 text-sm font-medium hover:bg-solar-500/20 transition-all"
-          >
-            ← Zurück
-          </Link>
-        </div>
-      </nav>
-
+      <nav className="glass sticky top-0 z-50"><div className="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between"><Link href="/" className="flex items-center gap-2"><img src="/logo.svg" alt="GCS Logo" className="h-6 w-auto invert" /></Link><Link href="/" className="px-4 py-2 rounded-full bg-solar-500/10 border border-solar-500/30 text-solar-400 text-sm font-medium hover:bg-solar-500/20 transition-all">← Zurück</Link></div></nav>
       <main className="max-w-3xl mx-auto px-6 py-24">
-        <div className="mb-12">
-          <div className="w-12 h-1 bg-solar-500 mb-6 rounded-full" />
-          <h1 className="text-3xl sm:text-4xl font-light text-white mb-2">Datenschutzerklärung</h1>
-          <p className="text-[var(--color-text-muted)] text-sm">Stand: Februar 2024</p>
-        </div>
-
+        <div className="mb-12"><div className="w-12 h-1 bg-solar-500 mb-6 rounded-full" /><h1 className="text-3xl sm:text-4xl font-light text-white mb-2">Datenschutzerklärung</h1><p className="text-[var(--color-text-muted)] text-sm">Stand: Februar 2024</p></div>
         <div className="space-y-12 text-[var(--color-text-secondary)] leading-relaxed font-light">
-          <section>
-            <h2 className="text-lg font-medium text-white mb-3">Allgemeine Hinweise</h2>
-            <p>
-              Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten
-              passiert, wenn Sie diese Website besuchen. Personenbezogene Daten sind alle Daten, mit denen Sie
-              persönlich identifiziert werden können.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-lg font-medium text-white mb-3">Verantwortliche Stelle</h2>
-            <div className="space-y-1">
-              <p>GCS — German Cannabis Standard GmbH</p>
-              <p>Kantstraße 24</p>
-              <p>10623 Berlin</p>
-              <p className="pt-1">
-                E-Mail:{' '}
-                <a href="mailto:info@germancannabisstandard.de" className="text-solar-400 hover:text-solar-300 transition-colors">
-                  info@germancannabisstandard.de
-                </a>
-              </p>
-            </div>
-          </section>
-
-          <section>
-            <h2 className="text-lg font-medium text-white mb-3">Datenerfassung auf dieser Website</h2>
-            <div className="space-y-4">
-              <div>
-                <h3 className="text-white/80 font-medium mb-1">Cookies</h3>
-                <p>
-                  Unsere Internetseiten verwenden so genannte „Cookies". Cookies sind kleine Datenpakete und richten
-                  auf Ihrem Endgerät keinen Schaden an. Sie werden entweder vorübergehend für die Dauer einer Sitzung
-                  (Session-Cookies) oder dauerhaft (permanente Cookies) auf Ihrem Endgerät gespeichert.
-                  Session-Cookies werden nach Ende Ihres Besuchs automatisch gelöscht.
-                </p>
-              </div>
-              <div>
-                <h3 className="text-white/80 font-medium mb-1">Server-Log-Dateien</h3>
-                <p>
-                  Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten
-                  Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind: Browsertyp und
-                  Browserversion, verwendetes Betriebssystem, Referrer URL, Hostname des zugreifenden Rechners,
-                  Uhrzeit der Serveranfrage, IP-Adresse.
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <section>
-            <h2 className="text-lg font-medium text-white mb-3">Hosting</h2>
-            <p>
-              Wir hosten die Inhalte unserer Website bei folgendem Anbieter:
-            </p>
-            <p className="mt-2">INWX GmbH, Prinzessinnenstr. 30, 10969 Berlin</p>
-            <p className="mt-2">
-              Das externe Hosting erfolgt zum Zwecke der Vertragserfüllung gegenüber unseren potenziellen und
-              bestehenden Kunden (Art. 6 Abs. 1 lit. b DSGVO) und im Interesse einer sicheren, schnellen und
-              effizienten Bereitstellung unseres Online-Angebots durch einen professionellen Anbieter
-              (Art. 6 Abs. 1 lit. f DSGVO).
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-lg font-medium text-white mb-3">Ihre Rechte</h2>
-            <p>
-              Sie haben jederzeit das Recht, unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer
-              gespeicherten personenbezogenen Daten zu erhalten. Sie haben außerdem ein Recht, die Berichtigung oder
-              Löschung dieser Daten zu verlangen. Hierzu sowie zu weiteren Fragen zum Thema Datenschutz können Sie
-              sich jederzeit unter der oben angegebenen Adresse an uns wenden.
-            </p>
-          </section>
-
-          <section>
-            <h2 className="text-lg font-medium text-white mb-3">Speicherdauer</h2>
-            <p>
-              Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer genannt wurde, verbleiben
-              Ihre personenbezogenen Daten bei uns, bis der Zweck für die Datenverarbeitung entfällt. Wenn Sie ein
-              berechtigtes Löschersuchen geltend machen oder eine Einwilligung zur Datenverarbeitung widerrufen,
-              werden Ihre Daten gelöscht.
-            </p>
-          </section>
+          <Section title="Datenschutz auf einen Blick"><H3>Allgemeine Hinweise</H3><p>Die folgenden Hinweise geben einen einfachen Überblick...</p><H3 className="mt-6">Datenerfassung auf dieser Website</H3><H4>Wer ist verantwortlich?</H4><p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber.</p><H4>Wie erfassen wir Ihre Daten?</H4><p>Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen.</p><p className="mt-2">Andere Daten werden automatisch beim Besuch der Website durch unsere IT-Systeme erfasst.</p></Section>
+          <Section title="Hosting"><p>Wir hosten die Inhalte unserer Website bei: INWX GmbH, Prinzessinnenstr. 30, 10969 Berlin</p><p className="mt-2">Es besteht ein Vertrag über Auftragsverarbeitung (AVV).</p></Section>
+          <Section title="Allgemeine Hinweise und Pflichtinformationen"><H3>Datenschutz</H3><p>Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst.</p><H3 className="mt-6">Hinweis zur verantwortlichen Stelle</H3><p>GCS — German Cannabis Standard GmbH, Kantstraße 24, 10623 Berlin</p><H3 className="mt-6">Speicherdauer</H3><p>Soweit keine speziellere Speicherdauer genannt wurde, verbleiben Ihre Daten bis der Zweck entfällt.</p></Section>
+          <Section title="Datenerfassung auf dieser Website"><H3>Cookies</H3><p>Unsere Internetseiten verwenden so genannte „Cookies".</p><H3 className="mt-6">Kontaktformular</H3><p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben gespeichert.</p><H3 className="mt-6">Anfrage per E-Mail, Telefon oder Telefax</H3><p>Ihre Anfrage inklusive aller daraus hervorgehenden personenbezogenen Daten wird zum Zwecke der Bearbeitung gespeichert.</p></Section>
         </div>
       </main>
     </div>
   );
+}
+
+function Section({ title, children }: { title: string; children: React.ReactNode }) {
+  return <section><h2 className="text-xl font-medium text-white mb-6">{title}</h2>{children}</section>;
+}
+function H3({ children, className }: { children: React.ReactNode; className?: string }) {
+  return <h3 className={`${className || ''} text-white/90 font-medium mb-2`}>{children}</h3>;
+}
+function H4({ children }: { children: React.ReactNode }) {
+  return <h4 className="text-white/80 font-medium mb-1 mt-4">{children}</h4>;
 }
